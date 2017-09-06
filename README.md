@@ -4,7 +4,7 @@ This is a script I hacked together to convert my wordpress blog to
 something like Jekyll. It's not meant as a drop in solution, rather
 you might hack it some more for your needs
 
-Current you install run it like this
+You can install and run it like this
 
     git clone https://github.com/greggman/json2jekyll.git
     cd json2jekyll
@@ -89,6 +89,7 @@ I then deleted the comments at the top so it ended up like this
 }]
 
   }
+```
 
 
 It's now actual JSON and super easy to use in JavaScript.
