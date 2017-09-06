@@ -121,13 +121,18 @@ It's now actual JSON and super easy to use in JavaScript.
 * `writeNode`
 
   The wordpress content is passed to `DOMHandler` via `htmlparser2`.
-  It is then processes as a DOM allowing easier handling of various
-  conversions. The core of that processing is in `writeNode where you
-  can check of specific tags and or specific depths in the DOM.
+  It is then processed as a DOM allowing easier handling of various
+  conversions. The core of that processing is in `writeNode` where you
+  can check for specific tags and or specific depths in the DOM.
 
   `context.depth` is the depth in the DOM hierarchy.
   `context.markdownDepth` is the depth in markdown processing for those
    cases when their is recursive markdown
+
+   Looking through that code you can see several places where
+   if it's a certain tag AND that tag has exactly one child
+   and that tag as a certain attribute then it outputs some code.
+   Otherwise it falls through.
 
 * `expandWordpressCode`
 
