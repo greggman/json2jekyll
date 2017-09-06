@@ -1,0 +1,21 @@
+{
+  "name": "json2jekyll",
+  "version": "1.0.0",
+  "description": "",
+  "main": "json2jekyll.js",
+  "scripts": {
+    "debug": "node --nolazy --debug-brk=5858 json2jekyll.js ../wordpress-db.json lastest_cell",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "domhandler": "^2.4.1",
+    "entities": "^1.1.1",
+    "hanson": "^1.2.0",
+    "htmlparser2": "^3.9.2",
+    "js-yaml": "^3.9.1",
+    "lodash": "^4.17.4",
+    "wordwrap": "^1.0.0"
+  }
+}
